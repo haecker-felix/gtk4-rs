@@ -2014,6 +2014,11 @@ impl ::std::fmt::Debug for GtkCheckButtonClass {
 }
 
 #[repr(C)]
+pub struct _GtkClipboard(c_void);
+
+pub type GtkClipboard = *mut _GtkClipboard;
+
+#[repr(C)]
 #[derive(Copy, Clone)]
 pub struct GtkColorChooserInterface {
     pub base_interface: gobject::GTypeInterface,
@@ -4840,6 +4845,11 @@ impl ::std::fmt::Debug for GtkWindowControlsClass {
             .finish()
     }
 }
+
+#[repr(C)]
+pub struct _GtkWindowGeometryInfo(c_void);
+
+pub type GtkWindowGeometryInfo = *mut _GtkWindowGeometryInfo;
 
 #[repr(C)]
 #[derive(Copy, Clone)]
